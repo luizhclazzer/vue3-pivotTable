@@ -3,14 +3,16 @@
 </template>
 
 <script>
+import 'pivottable';
 import $ from 'jquery';
 import 'jquery-ui';
 import 'jquery-ui/ui/widgets/mouse';
 import 'jquery-ui/ui/plugin';
+import 'jquery-ui/ui/scroll-parent';
 import 'jquery-ui/ui/widgets/sortable';
 import 'jquery-ui/ui/widgets/draggable';
 import 'jquery-ui/ui/widgets/droppable';
-import 'pivottable';
+import 'jquery-ui/ui/data';
 import 'multifact-pivottable';
 import 'pivottable/dist/pivot.css';
 

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import PivotTable from '../components/PivotTable.vue'
+import PivotTable from '../components/PivotTable.vue';
 
 export default {
   name: 'App',
@@ -24,7 +24,7 @@ export default {
         cols: ['month_year'],
         rows: ['name']
       }
-    }
+    };
   }
-}
+};
 </script>
