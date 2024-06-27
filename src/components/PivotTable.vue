@@ -4,6 +4,7 @@
 
 <script>
 import 'pivottable';
+import 'pivottable/dist/pivot.pt';
 import $ from 'jquery';
 import 'jquery-ui';
 import 'jquery-ui/ui/widgets/mouse';
@@ -78,7 +79,8 @@ export default {
       config.aggregators = $.extend($.pivotUtilities.aggregators, $.pivotUtilities.customAggs);
       config.renderers = $.extend($.pivotUtilities.renderers, $.pivotUtilities.gtRenderers);
 
-      $(this.$refs.pivotContainer).pivotUI(this.data, config);
+      $(this.$refs.pivotContainer).pivotUI(this.data, config, false, 'pt');
+      // $(this.$refs.pivotContainer).pivotUI(this.data, this.options, false, 'pt');
     }
   }
 };
